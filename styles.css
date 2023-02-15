@@ -1,22 +1,29 @@
+:root {
+    --color-background: #ECF3FF;
+    --color-body: #FFFFFF;
+    --color-text: #474443;
+    --color-accent: #85A0CF;
+}
+
 html {
     font-size: 12px;
     font-family: "Roboto", sans-serif;
-    background-color: #ECF3FF;
+    background-color: var(--color-background);
 }
 
 body {
-    width: 600px;
+    max-width: 80ch;
     margin: 0 auto;
-    background-color: #FFFFFF;
+    background-color: var(--color-body);
     padding: 0 20px 20px 20px;
-    border: 1px solid gray;
+    border: 1px solid var(--color-text);
 }
 
 h1 {
     margin: 0;
     padding: 20px 0;
-    color: #474443;
-    text-shadow: 3px 3px 1px #85A0CF;
+    color: var(--color-text);
+    text-shadow: 3px 3px 1px var(--color-accent);
     font-size: 60px;
     text-align: center;
 }
@@ -24,6 +31,7 @@ h1 {
 img {
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
 
 p,
@@ -31,4 +39,9 @@ li {
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 1px;
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-accent);
 }
